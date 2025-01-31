@@ -19,3 +19,16 @@ int main(){
 }
 
 //Do not modify source code above this line
+
+void shuffle(int &a, int &b, int &c, int &d) {
+    int A[] = {a, b, c, d};
+    for (int i = 0; i < 4; ++i) {
+        int randomA = rand() % 4;
+        swap(A[i], A[randomA]);
+    }
+    a = A[0];
+    b = A[1];
+    c = A[2];
+    d = A[3];
+    
+}
